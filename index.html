@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value='' required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" value='' required>
+            </div>
+            <button type="button" onclick="login()">Login</button>
+        </form>
+        <p id="message"></p>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-auth-compat.js"></script>
+    <script>
+        const firebaseConfig = {
+          apiKey: "AIzaSyBz6rkn-23Q816Lboryx4LB-LYh_5hSLIA",
+          authDomain: "teste-login-15f60.firebaseapp.com",
+          projectId: "teste-login-15f60",
+          storageBucket: "teste-login-15f60.appspot.com",
+          messagingSenderId: "702234770233",
+          appId: "1:702234770233:web:774d7f1838355d6303c6e8",
+          measurementId: "G-QLWP5DGLKQ"
+        };
+      
+        firebase.initializeApp(firebaseConfig);
+/*
+        firebase.auth().signInWithEmailAndPassword("macacao@vagarosos.com", "macaco").then(response => {
+            console.log("macaco")
+        }).catch(error => {
+            console.log("antes")
+        })
+        console.log("ata")
+*/
+      </script>
+    <script src="script.js"></script>
+</body>
+</html>
